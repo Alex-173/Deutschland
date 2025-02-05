@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ГОЛОВНА СТОРІНКА/Українці в Німеччині</title>
-    <link rel="stylesheet" href="./Style/scss/main.css" />
+    <link rel="stylesheet" href="./style/scss/main.css" />
   </head>
   <body>
     <!-- Header -->
@@ -19,12 +19,16 @@
         <nav class="header__nav">
           <ul class="header__menu">
             <li>
-              <a class="header__link" href="/sites/golovna.html">Головна</a>
+              <a class="header__link" href="/index.html">Головна</a>
             </li>
             <li><a class="header__link" href="#">Новини</a></li>
-            <li><a class="header__link" href="#">Довідник</a></li>
+            <li>
+              <a class="header__link" href="./sites/leistungen.html"
+                >Довідник</a
+              >
+            </li>
             <li><a class="header__link" href="#">Заходи</a></li>
-            <li><a class="header__link" href="#">Біженці</a></li>
+            <li><a class="header__link" href="#">Благодійність</a></li>
           </ul>
         </nav>
         <button class="hero__button" id="openModal">Твоє місто</button>
@@ -133,6 +137,7 @@
 
     <!-- Top-tema -->
     <section class="topics">
+      <h2>Популярні теми</h2>
       <div class="topics__grid">
         <div
           class="topic"
@@ -221,6 +226,7 @@
       </div>
     </footer>
 
+    <!-- ТВОЄ МІСТО -->
     <div class="modal" id="modal">
       <div class="modal__content">
         <span class="modal__close" id="closeModal">&times;</span>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Послуги в містах Німеччини</title>
+    <link rel="stylesheet" href="/style/scss/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div>
+          <a class="header__logo" href="/">
+            <img src="../media/LOGO.png" alt="Логотип- ua-in.de" />
+          </a>
+        </div>
+        <ul class="header__menu">
+          <li class="header__nav">
+            <a class="header__link" href="../sites/golovna.html">Головна</a>
+          </li>
+          <li>
+            <a class="header__link" href="#">Послуги</a>
+          </li>
+          <li>
+            <a class="header__link" href="#">Місцеві заходи</a>
+          </li>
+          <li>
+            <a class="header__link" href="#">Волонтерська допомога</a>
+          </li>
+          <li>
+            <a class="header__link" href="#">Міста</a>
+          </li>
+        </ul>
+
+        <div class="header__icons">
+          <a href="">
+            <svg class="header__icon">
+              <use href="../icons/symbol-defs.svg#icon-facebook2"></use>
+            </svg>
+          </a>
+
+          <a href="">
+            <svg class="header__icon">
+              <use href="../icons/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+
+        <button class="header__burger-btn mob-menu-btn-open" type="button">
+          <svg class="header__icon-burger-menu" width="20" height="14">
+            <use href="../media/icons.svg#_iconburger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Послуги в містах Німеччини</h1>
+      <div class="filters">
+        <select id="cityFilter">
+          <option value="">Оберіть місто</option>
+          <option value="Берлін">Берлін</option>
+          <option value="Мюнхен">Мюнхен</option>
+          <option value="Гамбург">Гамбург</option>
+          <option value="Кельн">Кельн</option>
+          <option value="Франкфурт">Франкфурт</option>
+          <option value="Штутгарт">Штутгарт</option>
+        </select>
+        <select id="serviceFilter">
+          <option value="">Оберіть послугу</option>
+          <option value="Косметологічні послуги">Косметологічні послуги</option>
+          <option value="Лікарі">Лікарі</option>
+          <option value="Будівельні роботи">Будівельні роботи</option>
+        </select>
+      </div>
+      <ul class="service-list">
+        <li data-city="Берлін" data-service="Косметологічні послуги">
+          <h3>Косметолог у Берліні</h3>
+          <div class="company-info">
+            <div class="company-card">
+              <h2>DMK Kosmetikerin Svitlana Gerts</h2>
+              <p>
+                <strong>Telefon:</strong> +49 176 56849410<br />
+                <strong>E-Mail:</strong> svgertss@gmail.com<br />
+                <strong>Адреса:</strong> Swinemünder Str. 106, 10435 Berlin
+              </p>
+            </div>
+            <div class="company-card">
+              <h2>Beauty Studio Anna Schmidt</h2>
+              <p>
+                <strong>Telefon:</strong> +49 176 12345678<br />
+                <strong>E-Mail:</strong> annaschmidt@gmail.com<br />
+                <strong>Адреса:</strong> Prenzlauer Allee 50, 10405 Berlin
+              </p>
+            </div>
+          </div>
+          <div class="company-info">
+            <div class="company-card">
+              <h2>DMK Kosmetikerin Svitlana Gerts</h2>
+              <p>
+                <strong>Telefon:</strong> +49 176 56849410<br />
+                <strong>E-Mail:</strong> svgertss@gmail.com<br />
+                <strong>Адреса:</strong> Swinemünder Str. 106, 10435 Berlin
+              </p>
+            </div>
+            <div class="company-card">
+              <h2>Beauty Studio Anna Schmidt</h2>
+              <p>
+                <strong>Telefon:</strong> +49 176 12345678<br />
+                <strong>E-Mail:</strong> annaschmidt@gmail.com<br />
+                <strong>Адреса:</strong> Prenzlauer Allee 50, 10405 Berlin
+              </p>
+            </div>
+          </div>
+        </li>
+        <li data-city="Мюнхен" data-service="Лікарі">
+          <h3>Лікар у Мюнхені</h3>
+          <div class="company-card">
+            <p>Кваліфікований лікар у Мюнхені допоможе вам з консультацією.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script src="../js/leistungen.js"></script>
+  </body>
+</html>
