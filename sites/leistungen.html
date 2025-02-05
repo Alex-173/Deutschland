@@ -4,53 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Послуги в містах Німеччини</title>
-    <link rel="stylesheet" href="/style/scss/main.css" />
+    <link rel="stylesheet" href="../style/scss/main.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="header__container">
         <div>
           <a class="header__logo" href="/">
-            <img src="../media/LOGO.png" alt="Логотип- ua-in.de" />
+            <img src="../media/LOGO.png" alt="Логотип - ua-in.de" />
           </a>
         </div>
-        <ul class="header__menu">
-          <li class="header__nav">
-            <a class="header__link" href="../sites/golovna.html">Головна</a>
-          </li>
-          <li>
-            <a class="header__link" href="#">Послуги</a>
-          </li>
-          <li>
-            <a class="header__link" href="#">Місцеві заходи</a>
-          </li>
-          <li>
-            <a class="header__link" href="#">Волонтерська допомога</a>
-          </li>
-          <li>
-            <a class="header__link" href="#">Міста</a>
-          </li>
-        </ul>
 
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li>
+              <a class="header__link" href="index.html">Головна</a>
+            </li>
+            <li><a class="header__link" href="#">Новини</a></li>
+            <li>
+              <a class="header__link" href="/sites/leistungen.html">Довідник</a>
+            </li>
+            <li><a class="header__link" href="#">Заходи</a></li>
+            <li><a class="header__link" href="#">Благодійність</a></li>
+          </ul>
+        </nav>
+        <button class="hero__button" id="openModal">Твоє місто</button>
         <div class="header__icons">
-          <a href="">
+          <a href="#">
             <svg class="header__icon">
               <use href="../icons/symbol-defs.svg#icon-facebook2"></use>
             </svg>
           </a>
-
-          <a href="">
+          <a href="#">
             <svg class="header__icon">
               <use href="../icons/symbol-defs.svg#icon-instagram"></use>
             </svg>
           </a>
         </div>
 
-        <button class="header__burger-btn mob-menu-btn-open" type="button">
-          <svg class="header__icon-burger-menu" width="20" height="14">
-            <use href="../media/icons.svg#_iconburger"></use>
+        <!-- Бургер-кнопка -->
+        <button class="header__burger-btn" type="button">
+          <svg class="header__icon-burger-menu" width="30" height="30">
+            <use href="../icons/symbol-defs.svg#icon-menu"></use>
           </svg>
         </button>
+      </div>
+
+      <!-- Мобільне меню (модальне вікно) -->
+      <div class="mobile-menu">
+        <button class="mobile-menu__close">&times;</button>
+        <ul class="mobile-menu__list">
+          <li>
+            <a class="mobile-menu__link" href="./index.html">Головна</a>
+          </li>
+          <li><a class="mobile-menu__link" href="#">Новини</a></li>
+          <li>
+            <a class="mobile-menu__link" href="./sites/leistungen.html"
+              >Довідник</a
+            >
+          </li>
+          <li><a class="mobile-menu__link" href="#">Заходи</a></li>
+          <li><a class="mobile-menu__link" href="#">Біженці</a></li>
+        </ul>
+        <button class="hero__button" id="openModal">Твоє місто</button>
+        <div class="mobile-menu__icons">
+          <a href="#">
+            <svg class="header__icon">
+              <use href="./icons/symbol-defs.svg#icon-facebook2"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="header__icon">
+              <use href="./icons/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </header>
     <div class="container">
